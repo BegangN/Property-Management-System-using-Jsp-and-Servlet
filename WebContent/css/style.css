@@ -1,0 +1,921 @@
+
+
+
+/* For mobile phones: */
+
+.column {
+    width: 100%;
+  }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+  .column {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body{
+	background-color:#fff;
+	color:#111;
+	font-family: Verdana;
+	width:100%;
+	overflow-x:hidden;
+}
+
+h1{
+	margin-top: 80px;
+	color:#222529;
+	text-align:center;
+	font-size:40px;
+}
+
+h2{
+	margin-left: 380px;
+	color:#111;
+	text-align:center;
+	font-size:25px;
+    width: 40%;
+}
+
+.open
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 10000;
+}
+.open .layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1)
+{
+	background: #000;
+	z-index: 2;
+}
+.open .layer:nth-child(2)
+{
+	background: #03a9f4;
+	animation-delay: 1s;
+	z-index: 1;
+}
+@keyframes open
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
+	}
+}
+
+
+/*navigation*/
+nav{
+	
+	top:0;
+	left:0;
+	width:100%;
+	height:100px;
+	padding:0 100px;
+	box-sizing:border-box;
+    
+}
+
+.logo {
+	float:left;
+	height:100%;
+	line-height:70px;
+	padding-right:20px;
+	font-size:24px;
+	color:#39CCCC;
+}
+ ul {
+	position:relative;
+	display:flex;
+	padding:0;
+	top:30px;
+	margin:0;
+	left:100px;
+}
+	 ul li{
+	list-style:none;	
+	}
+
+ ul li a{
+    font-size:17px;
+     top:10px;
+     position:relative;
+     display:block; 
+     height:70px;
+     line-height:70px;
+     padding: 0 20px;
+     box-sizing:border-box;
+     color:#707070;
+		
+	}
+
+li a:hover {
+    background-color: #111;
+}
+
+.login{
+	display:flex;
+	position:absolute;
+	top:70px;
+	right:300px;
+	color:#3480E3;
+	font-size:17px;
+}
+
+.reg{
+	background-color:#3480e3;
+	text-align:center;
+	font-size:17px;
+	position:absolute;
+	top:50px;
+	right:130px;
+	padding: 20px 40px;
+	width:60px;
+	height:20px;
+	cursor: pointer;
+}
+.reg a{
+	color:#fff;
+}
+
+/*BANNER SECTION AND HEADING */
+    
+#header{
+    
+       padding-bottom: 20px; 
+        
+    }
+.banner{
+	padding: 20px;
+    margin-top: 20px;
+    margin-left:420px; 
+}
+
+
+
+
+/*why us section*/
+
+#about{
+    padding: 20px;
+    background-color: #E1FFF9;
+    width: 100%;
+    height:650px;
+   
+}
+
+#about h3{
+padding-top: 10px;
+    font-size: 25px;
+ 
+}
+
+.left-about{
+    padding: 20px;
+   
+}
+
+#about h4{
+    margin-top: 60px;
+    float: right;
+    line-height: 1.5;
+    font-size: 35px;
+   margin-right: 80px;
+    width: 40%;
+}
+
+.blue{
+    color: #53A9FF;
+}
+
+#about p{
+    position: absolute;
+    right: 10px;
+    top: 1020px;
+    margin-right: 40px;
+    line-height: 2;
+    width: 40%;
+   font-size: 20px;
+    
+}
+.read {
+    position: absolute;
+    right: 420px;
+    top: 1250px;
+    background-color: #3480E3;
+    color:#fff;
+    padding: 20px 40px;
+   
+}
+  /*LATEST PROPERTIES*/
+    
+    #latest{
+    width: 100%;
+    height:650px;
+    position: absolute;
+    top:1300px;  
+    } 
+    
+#latest h3{
+    font-size: 25px;
+  position: absolute;
+    top:30px;
+    right:230px;
+}
+ 
+
+
+.heading{
+    color:#111;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about-home{
+    color:#111;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+
+/*company section
+
+/*CREATING SERVICES*/
+  .row2{
+	  margin:20px 0;
+  }
+  
+  
+  
+  /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+
+.chat{
+	
+	box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.form-containers {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+/* Full-width textarea */
+.form-containers textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-containers textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-containers .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-containers .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-containers .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  
+  
+  
+  
+  .column2{
+	  background-color:#DDDDDD;
+	  display:table-cell;
+	  padding:20px;
+	  width:33%;
+	  text-align:center;
+	  color:#fff;
+	  vertical-align:middle;
+	  border-left:10px solid #f3f3f3;
+	  border-right:10px solid #f3f3f3;
+	  
+  }
+  
+  .column:nth-child(1){background-color:;
+   }
+  .mission{
+	  margin:20px 50px;
+	  background-color:#AAAAAA;
+	  padding:10px;
+	  width:90%;
+	  height:auto;
+	  color:#111;
+	  font-size:20px;
+	  text-align:;
+  }
+  .about{
+	  color:#111;
+	  text-align:center;
+	  text-transform:uppercase;
+	  padding-top:10px;
+	  font-weight:100;
+	  font-size :34px;
+  }
+.title2{
+    position: absolute;
+    top:70px;
+    right:10px;
+}   
+    .container{
+        position: absolute;
+        top:90px;
+        left: 130px;
+        width: 100%;
+        margin: 10px auto 0;
+        box-sizing: border-box;
+    }  
+    
+    .container p img{
+        width: 100%;
+    }
+    
+    .row{
+        display: flex;
+    }
+    
+    .column{
+        margin: 20px;
+        padding: 20px;
+        width: 33.3%;
+    }
+    
+    .status{
+        position: absolute;
+        top:70px;
+    }
+    
+    .price{
+        background-color: #223242;
+        color:#fff;
+        text-align: center;
+        padding:15px 10px;
+        width: 100px;
+        position: absolute;
+        top:300px;
+       
+    }
+    
+.menu{
+	margin-top:100px;
+	margin-left:350px;
+}
+
+/* REGISTRATION FORM */
+
+input[type=text], input[type=password], input[type=number], select, input[type=file], input[type=date] {
+width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+    .container-form{
+	width:60%;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin:10px auto 0 ;
+    display:table;
+    box-sizing:border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]{
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* LOGIN FORM */
+
+.logins{
+	
+	margin: 10% auto 15% auto; 
+   
+    width: 60%;
+	
+}
+/* Add styles to the form container */
+.loginContainer {
+    width:60%;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin:10px auto 0 ;
+    display:table;
+    box-sizing:border-box;
+}
+
+/* Full-width input fields */
+ .logins input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.logins input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+ row2{
+	  margin:20px 0;
+  }
+  
+  
+  .column2{
+	  background-color:#DDDDDD;
+	  display:table-cell;
+	  padding:20px;
+	  width:33%;
+	  text-align:center;
+	  color:#fff;
+	  vertical-align:middle;
+	  border-left:10px solid #f3f3f3;
+	  border-right:10px solid #f3f3f3;
+	  
+  }
+  
+ 
+  .about{
+	  color:#111;
+	  text-align:center;
+	  text-transform:uppercase;
+	  padding-top:10px;
+	  font-weight:100;
+	  font-size :34px;
+  }   
+    
+    
+    
+    .table{
+       margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;  
+        
+    }
+    
+    .table h2{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .wrapper{
+  width: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .item{
+  width: 220px;
+  height: auto;
+  margin: 10px;
+  background: #fff;
+  padding: 30px 20px 65px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.wrapper .item h3{
+  letter-spacing: 2px;
+}
+
+.wrapper .item.item_1 h3{
+  color: #69b0bb;
+}
+
+.wrapper .item.item_2 h3{
+  color: #f4581b;
+}
+
+.wrapper .item.item_3 h3{
+  color: #504b5a;
+}
+
+.wrapper .item img{
+  display: block;
+  width: 160px;
+  margin: 10px auto;
+}
+
+.wrapper .item .info p{
+  font-size: 10px;
+  color: #a3a3a3;
+    margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.wrapper .item .prices{
+  margin-top: 20px;
+}
+
+.wrapper .item .prices sub,
+.wrapper .item .prices sup{
+  font-size: 10px;
+}
+
+
+.wrapper .item .btn{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  padding: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+
+.wrapper .item.item_1 .btn{
+  background: #69b0bb;
+}
+.wrapper .item.item_2 .btn{
+  background: #f4581b;
+}
+.wrapper .item.item_3 .btn{
+  background: #504b5a;
+}
+
+.wrapper .item .btn a{
+  display: block;
+  color: #fff;
+}
+    
+    footer{
+	  background-color:#10191D;
+	  padding:10px;
+        margin-top: 40px;
+	  width:100%;
+	  height:auto;
+	  color:#fff;
+	  font-size:20px;
+	  text-align:center;
+  }
+  
+  
+  
+  .footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+  
+    
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+    
+    
+}
+
